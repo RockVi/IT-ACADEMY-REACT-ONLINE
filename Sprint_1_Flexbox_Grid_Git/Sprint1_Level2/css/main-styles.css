@@ -1,0 +1,40 @@
+header{
+    max-width: 1200px;
+    height: 400px;
+    margin:auto;
+
+    background-image: url(../img/header.jpg);
+    
+    background-position-y: 50%;
+    background-position-x: 50%;
+    
+    display: flex;
+    flex-wrap : wrap;
+}
+
+header > div:nth-child(1),
+header > div:nth-child(3){
+    flex: 1;
+}
+
+header > nav{
+    flex: 5;
+}
+
+
+nav > ul{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header > div:nth-child(4){
+    flex: 100%;
+    text-align: center;
+    opacity: 0.5;
+    color: coral;
+    background-color: #111;
+}
